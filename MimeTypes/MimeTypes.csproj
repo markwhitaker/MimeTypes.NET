@@ -13,6 +13,7 @@
         <PackageLicenseUrl>https://github.com/markwhitaker/MimeTypes.NET/blob/master/LICENSE</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/markwhitaker/MimeTypes.NET</RepositoryUrl>
         <RepositoryType>Git</RepositoryType>
+        <PackageIconUrl>https://raw.githubusercontent.com/markwhitaker/MimeTypes.NET/master/Artwork/MimeTypes-icon-64.png</PackageIconUrl>
     </PropertyGroup>
 
     <ItemGroup>
