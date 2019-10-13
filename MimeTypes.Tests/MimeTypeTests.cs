@@ -62,6 +62,9 @@ namespace Mainwave.MimeTypes.Tests
         public void TestApplicationXmlDtd() => Assert.AreEqual("application/xml-dtd", MimeTypes.Application.XmlDtd);
         [Test]
         public void TestApplicationXsltXml() => Assert.AreEqual("application/xslt+xml", MimeTypes.Application.XsltXml);
+
+        [Test]
+        public void TestApplicationXWwwFormUrlencoded() => Assert.AreEqual("application/x-www-form-urlencoded", MimeTypes.Application.XWwwFormUrlencoded);
         [Test]
         public void TestApplicationZip() => Assert.AreEqual("application/zip", MimeTypes.Application.Zip);
         #endregion

@@ -32,6 +32,7 @@
             public const string Xml = "application/xml";
             public const string XmlDtd = "application/xml-dtd";
             public const string XsltXml = "application/xslt+xml";
+            public const string XWwwFormUrlencoded = "application/x-www-form-urlencoded";
             public const string Zip = "application/zip";
         }
 
