@@ -51,6 +51,7 @@
             public const string Mp4 = "audio/mp4";
             public const string Mpeg = "audio/mpeg";
             public const string Ogg = "audio/ogg";
+            public const string Wav = "audio/wav";
             public const string Webm = "audio/webm";
             public const string XAac = "audio/x-aac";
             public const string XAiff = "audio/x-aiff";

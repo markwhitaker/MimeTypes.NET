@@ -79,6 +79,8 @@ namespace Mainwave.MimeTypes.Tests
         [Test]
         public void TestAudioOgg() => Assert.AreEqual("audio/ogg", MimeTypes.Audio.Ogg);
         [Test]
+        public void TestAudioWav() => Assert.AreEqual("audio/wav", MimeTypes.Audio.Wav);
+        [Test]
         public void TestAudioWebm() => Assert.AreEqual("audio/webm", MimeTypes.Audio.Webm);
         [Test]
         public void TestAudioXAac() => Assert.AreEqual("audio/x-aac", MimeTypes.Audio.XAac);
