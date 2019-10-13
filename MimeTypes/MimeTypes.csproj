@@ -3,6 +3,15 @@
     <PropertyGroup>
         <TargetFramework>netstandard1.0</TargetFramework>
         <RootNamespace>Mainwave.MimeTypes</RootNamespace>
+        <PackageId>Mainwave.MimeTypes</PackageId>
+        <Title>MimeTypes</Title>
+        <Authors>Mark Whitaker</Authors>
+        <Description>MIME type constants for .NET projects</Description>
+        <Copyright>Mark Whitaker</Copyright>
+        <PackageProjectUrl>https://github.com/markwhitaker/MimeTypes.NET</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/markwhitaker/MimeTypes.NET/blob/master/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/markwhitaker/MimeTypes.NET</RepositoryUrl>
+        <RepositoryType>Git</RepositoryType>
     </PropertyGroup>
 
 </Project>
