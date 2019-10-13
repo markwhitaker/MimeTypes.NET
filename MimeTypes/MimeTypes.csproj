@@ -7,7 +7,7 @@
         <Title>MimeTypes</Title>
         <Authors>Mark Whitaker</Authors>
         <Company>Mainwave</Company>
-        <Description>MIME type constants for .NET projects</Description>
+        <Description>Tiny library of structured MIME type constants for .NET projects</Description>
         <Copyright>Mark Whitaker</Copyright>
         <PackageProjectUrl>https://github.com/markwhitaker/MimeTypes.NET</PackageProjectUrl>
         <PackageLicenseUrl>https://github.com/markwhitaker/MimeTypes.NET/blob/master/LICENSE</PackageLicenseUrl>
