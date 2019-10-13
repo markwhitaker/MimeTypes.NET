@@ -1,7 +1,13 @@
 ﻿namespace Mainwave.MimeTypes
 {
+    /// <summary>
+    /// MIME type constants
+    /// </summary>
     public static class MimeTypes
     {
+        /// <summary>
+        /// MIME type constants for application types
+        /// </summary>
         public static class Application
         {
             public const string AtomXml = "application/atom+xml";
@@ -36,6 +42,9 @@
             public const string Zip = "application/zip";
         }
 
+        /// <summary>
+        /// MIME type constants for audio types
+        /// </summary>
         public static class Audio
         {
             public const string Midi = "audio/midi";
@@ -50,6 +59,9 @@
             public const string XWav = "audio/x-wav";
         }
 
+        /// <summary>
+        /// MIME type constants for image types
+        /// </summary>
         public static class Image
         {
             public const string Bmp = "image/bmp";
@@ -61,6 +73,9 @@
             public const string Webp = "image/webp";
         }
 
+        /// <summary>
+        /// MIME type constants for multipart types
+        /// </summary>
         public static class Multipart
         {
             public const string Byteranges = "multipart/byteranges";
@@ -69,6 +84,9 @@
             public const string Related = "multipart/related";
         }
 
+        /// <summary>
+        /// MIME type constants for text types
+        /// </summary>
         public static class Text
         {
             public const string Css = "text/css";
@@ -80,6 +98,9 @@
             public const string Yaml = "text/yaml";
         }
 
+        /// <summary>
+        /// MIME type constants for video types
+        /// </summary>
         public static class Video
         {
             public const string Threegpp = "video/3gpp";
