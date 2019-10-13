@@ -109,6 +109,17 @@ namespace Mainwave.MimeTypes.Tests
         public void TestImageWebp() => Assert.AreEqual("image/webp", MimeTypes.Image.Webp);
         #endregion
 
+        #region Multipart
+        [Test]
+        public void TestMultipartByteranges() => Assert.AreEqual("multipart/byteranges", MimeTypes.Multipart.Byteranges);
+        [Test]
+        public void TestMultipartEncrypted() => Assert.AreEqual("multipart/encrypted", MimeTypes.Multipart.Encrypted);
+        [Test]
+        public void TestMultipartFormData() => Assert.AreEqual("multipart/form-data", MimeTypes.Multipart.FormData);
+        [Test]
+        public void TestMultipartRelated() => Assert.AreEqual("multipart/related", MimeTypes.Multipart.Related);
+        #endregion
+        
         #region Text
         [Test]
         public void TestTextCss() => Assert.AreEqual("text/css", MimeTypes.Text.Css);

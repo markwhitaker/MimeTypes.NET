@@ -61,6 +61,14 @@
             public const string Webp = "image/webp";
         }
 
+        public static class Multipart
+        {
+            public const string Byteranges = "multipart/byteranges";
+            public const string Encrypted = "multipart/encrypted";
+            public const string FormData = "multipart/form-data";
+            public const string Related = "multipart/related";
+        }
+
         public static class Text
         {
             public const string Css = "text/css";
