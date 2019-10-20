@@ -3,7 +3,7 @@
     /// <summary>
     /// MIME type constants
     /// </summary>
-    public static partial class MimeTypes
+    public static partial class MimeType
     {
     }
 }

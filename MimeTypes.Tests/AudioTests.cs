@@ -6,26 +6,26 @@ namespace Mainwave.MimeTypes.Tests
     public class AudioTests
     {
         [Test]
-        public void TestAudioMidi() => Assert.AreEqual("audio/midi", MimeTypes.Audio.Midi);
+        public void TestAudioMidi() => Assert.AreEqual("audio/midi", MimeType.Audio.Midi);
         [Test]
-        public void TestAudioMp4() => Assert.AreEqual("audio/mp4", MimeTypes.Audio.Mp4);
+        public void TestAudioMp4() => Assert.AreEqual("audio/mp4", MimeType.Audio.Mp4);
         [Test]
-        public void TestAudioMpeg() => Assert.AreEqual("audio/mpeg", MimeTypes.Audio.Mpeg);
+        public void TestAudioMpeg() => Assert.AreEqual("audio/mpeg", MimeType.Audio.Mpeg);
         [Test]
-        public void TestAudioOgg() => Assert.AreEqual("audio/ogg", MimeTypes.Audio.Ogg);
+        public void TestAudioOgg() => Assert.AreEqual("audio/ogg", MimeType.Audio.Ogg);
         [Test]
-        public void TestAudioWav() => Assert.AreEqual("audio/wav", MimeTypes.Audio.Wav);
+        public void TestAudioWav() => Assert.AreEqual("audio/wav", MimeType.Audio.Wav);
         [Test]
-        public void TestAudioWebm() => Assert.AreEqual("audio/webm", MimeTypes.Audio.Webm);
+        public void TestAudioWebm() => Assert.AreEqual("audio/webm", MimeType.Audio.Webm);
         [Test]
-        public void TestAudioXAac() => Assert.AreEqual("audio/x-aac", MimeTypes.Audio.XAac);
+        public void TestAudioXAac() => Assert.AreEqual("audio/x-aac", MimeType.Audio.XAac);
         [Test]
-        public void TestAudioXAiff() => Assert.AreEqual("audio/x-aiff", MimeTypes.Audio.XAiff);
+        public void TestAudioXAiff() => Assert.AreEqual("audio/x-aiff", MimeType.Audio.XAiff);
         [Test]
-        public void TestAudioXMpegurl() => Assert.AreEqual("audio/x-mpegurl", MimeTypes.Audio.XMpegurl);
+        public void TestAudioXMpegurl() => Assert.AreEqual("audio/x-mpegurl", MimeType.Audio.XMpegurl);
         [Test]
-        public void TestAudioXMsWma() => Assert.AreEqual("audio/x-ms-wma", MimeTypes.Audio.XMsWma);
+        public void TestAudioXMsWma() => Assert.AreEqual("audio/x-ms-wma", MimeType.Audio.XMsWma);
         [Test]
-        public void TestAudioXWav() => Assert.AreEqual("audio/x-wav", MimeTypes.Audio.XWav);
+        public void TestAudioXWav() => Assert.AreEqual("audio/x-wav", MimeType.Audio.XWav);
     }
 }
