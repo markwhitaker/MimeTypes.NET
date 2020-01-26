@@ -16,4 +16,8 @@
         <PackageIconUrl>https://raw.githubusercontent.com/markwhitaker/MimeTypes.NET/master/Artwork/MimeTypes-icon-64.png</PackageIconUrl>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="GitVersionTask" Version="5.0.1" />
+    </ItemGroup>
+
 </Project>
