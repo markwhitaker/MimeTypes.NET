@@ -1,9 +1,9 @@
-name: .NET Core
+name: Build and test
 
 on: [push]
 
 jobs:
-  build:
+  build-and-test:
 
     runs-on: ubuntu-latest
 
@@ -13,5 +13,7 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 2.2.108
-    - name: Build with dotnet
-      run: dotnet build --configuration Release
+    - name: Build project (release)
+      run: dotnet build -c Release
+    - name: Run unit tests
+      run: dotnet test -c Release
