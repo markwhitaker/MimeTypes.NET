@@ -1,0 +1,51 @@
+name: Publish to NuGet
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build-and-test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build project
+        run: dotnet build -c Release
+
+      - name: Run unit tests
+        run: dotnet test -c Release
+
+  publish-to-nuget:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Fetch all history for all tags and branches
+        run: git fetch --prune --unshallow
+
+#      - name: Setup .NET Core
+#        uses: actions/setup-dotnet@v1
+#        with:
+#          dotnet-version: 3.0.100 #2.2.108
+
+      - name: Install GitVersion
+        uses: gittools/actions/gitversion/setup@v0.6.2
+        with:
+          versionSpec: '5.1.x'
+
+      - name: Run GitVersion
+        id: gitversion # step id used as reference for output values
+        uses: gittools/actions/gitversion/execute@v0.6.2
+
+      - name: Build NuGet package
+        run: dotnet pack -c Release -o nugetPackage -p:PackageVersion=${{ steps.gitversion.outputs.legacySemVer }}
+
+      - name: Publish to NuGet
+        run: dotnet nuget push nugetPackage/*.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
