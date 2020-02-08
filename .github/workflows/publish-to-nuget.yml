@@ -46,6 +46,9 @@ jobs:
         id: gitversion # step id used as reference for output values
         uses: gittools/actions/gitversion/execute@v0.6.2
 
+      - name: Build project
+        run: dotnet build -c Release /p:Version=${{ steps.gitversion.outputs.assemblySemVer }}
+
       - name: Build NuGet package
         run: dotnet pack -c Release -o nugetPackage -p:PackageVersion=${{ steps.gitversion.outputs.legacySemVer }}
 
