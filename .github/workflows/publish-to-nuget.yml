@@ -21,6 +21,8 @@ jobs:
 
   publish-to-nuget:
 
+    needs: build-and-test
+
     runs-on: ubuntu-latest
 
     steps:
