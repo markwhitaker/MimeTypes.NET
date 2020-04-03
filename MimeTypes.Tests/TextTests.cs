@@ -5,19 +5,16 @@ namespace Mainwave.MimeTypes.Tests
     [TestFixture]
     public class TextTests
     {
-        [Test]
-        public void TestTextCss() => Assert.AreEqual("text/css", MimeType.Text.Css);
-        [Test]
-        public void TestTextCsv() => Assert.AreEqual("text/csv", MimeType.Text.Csv);
-        [Test]
-        public void TestTextHtml() => Assert.AreEqual("text/html", MimeType.Text.Html);
-        [Test]
-        public void TestTextPlain() => Assert.AreEqual("text/plain", MimeType.Text.Plain);
-        [Test]
-        public void TestTextRichText() => Assert.AreEqual("text/richtext", MimeType.Text.RichText);
-        [Test]
-        public void TestTextSgml() => Assert.AreEqual("text/sgml", MimeType.Text.Sgml);
-        [Test]
-        public void TestTextYaml() => Assert.AreEqual("text/yaml", MimeType.Text.Yaml);
+        [TestCase(MimeType.Text.Css, "text/css")]
+        [TestCase(MimeType.Text.Csv, "text/csv")]
+        [TestCase(MimeType.Text.Html, "text/html")]
+        [TestCase(MimeType.Text.Plain, "text/plain")]
+        [TestCase(MimeType.Text.RichText, "text/richtext")]
+        [TestCase(MimeType.Text.Sgml, "text/sgml")]
+        [TestCase(MimeType.Text.Yaml, "text/yaml")]
+        public void AssertTextMimeTypeValue(string valueUnderTest, string expectedValue)
+        {
+            Assert.That(valueUnderTest, Is.EqualTo(expectedValue));
+        }
     }
 }

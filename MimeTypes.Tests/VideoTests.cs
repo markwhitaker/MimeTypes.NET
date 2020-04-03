@@ -5,19 +5,16 @@ namespace Mainwave.MimeTypes.Tests
     [TestFixture]
     public class VideoTests
     {
-        [Test]
-        public void TestVideoThreegpp() => Assert.AreEqual("video/3gpp", MimeType.Video.Threegpp);
-        [Test]
-        public void TestVideoH264() => Assert.AreEqual("video/h264", MimeType.Video.H264);
-        [Test]
-        public void TestVideoMp4() => Assert.AreEqual("video/mp4", MimeType.Video.Mp4);
-        [Test]
-        public void TestVideoMpeg() => Assert.AreEqual("video/mpeg", MimeType.Video.Mpeg);
-        [Test]
-        public void TestVideoOgg() => Assert.AreEqual("video/ogg", MimeType.Video.Ogg);
-        [Test]
-        public void TestVideoQuicktime() => Assert.AreEqual("video/quicktime", MimeType.Video.Quicktime);
-        [Test]
-        public void TestVideoWebm() => Assert.AreEqual("video/webm", MimeType.Video.Webm);
+        [TestCase(MimeType.Video.Threegpp, "video/3gpp")]
+        [TestCase(MimeType.Video.H264, "video/h264")]
+        [TestCase(MimeType.Video.Mp4, "video/mp4")]
+        [TestCase(MimeType.Video.Mpeg, "video/mpeg")]
+        [TestCase(MimeType.Video.Ogg, "video/ogg")]
+        [TestCase(MimeType.Video.Quicktime, "video/quicktime")]
+        [TestCase(MimeType.Video.Webm, "video/webm")]
+        public void AssertVideoMimeTypeValue(string valueUnderTest, string expectedValue)
+        {
+            Assert.That(valueUnderTest, Is.EqualTo(expectedValue));
+        }
     }
 }

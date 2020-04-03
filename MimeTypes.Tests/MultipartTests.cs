@@ -5,13 +5,13 @@ namespace Mainwave.MimeTypes.Tests
     [TestFixture]
     public class MultipartTests
     {
-        [Test]
-        public void TestMultipartByteranges() => Assert.AreEqual("multipart/byteranges", MimeType.Multipart.Byteranges);
-        [Test]
-        public void TestMultipartEncrypted() => Assert.AreEqual("multipart/encrypted", MimeType.Multipart.Encrypted);
-        [Test]
-        public void TestMultipartFormData() => Assert.AreEqual("multipart/form-data", MimeType.Multipart.FormData);
-        [Test]
-        public void TestMultipartRelated() => Assert.AreEqual("multipart/related", MimeType.Multipart.Related);
+        [TestCase(MimeType.Multipart.Byteranges, "multipart/byteranges")]
+        [TestCase(MimeType.Multipart.Encrypted, "multipart/encrypted")]
+        [TestCase(MimeType.Multipart.FormData, "multipart/form-data")]
+        [TestCase(MimeType.Multipart.Related, "multipart/related")]
+        public void AssertMultipartMimeTypeValue(string valueUnderTest, string expectedValue)
+        {
+            Assert.That(valueUnderTest, Is.EqualTo(expectedValue));
+        }
     }
 }
