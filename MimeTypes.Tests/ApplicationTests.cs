@@ -6,7 +6,6 @@ namespace Mainwave.MimeTypes.Tests
     public class ApplicationTests
     {
         [TestCase(MimeType.Application.AtomXml, "application/atom+xml")]
-        [TestCase(MimeType.Application.AtomXml, "application/atom+xml")]
         [TestCase(MimeType.Application.AtomcatXml, "application/atomcat+xml")]
         [TestCase(MimeType.Application.Ecmascript, "application/ecmascript")]
         [TestCase(MimeType.Application.JavaArchive, "application/java-archive")]
