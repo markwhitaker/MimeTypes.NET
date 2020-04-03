@@ -7,155 +7,157 @@
         /// </summary>
         public static class Application
         {
+            private const string Prefix = "application/";
+            
             /// <summary>
             /// application/atom+xml
             /// </summary>
-            public const string AtomXml = "application/atom+xml";
+            public const string AtomXml = Prefix + "atom+xml";
 
             /// <summary>
             /// application/atomcat+xml
             /// </summary>
-            public const string AtomcatXml = "application/atomcat+xml";
+            public const string AtomcatXml = Prefix + "atomcat+xml";
             
             /// <summary>
             /// application/ecmascript
             /// </summary>
-            public const string Ecmascript = "application/ecmascript";
+            public const string Ecmascript = Prefix + "ecmascript";
             
             /// <summary>
             /// application/java-archive
             /// </summary>
-            public const string JavaArchive = "application/java-archive";
+            public const string JavaArchive = Prefix + "java-archive";
             
             /// <summary>
             /// application/javascript
             /// </summary>
-            public const string Javascript = "application/javascript";
+            public const string Javascript = Prefix + "javascript";
             
             /// <summary>
             /// application/json
             /// </summary>
-            public const string Json = "application/json";
+            public const string Json = Prefix + "json";
             
             /// <summary>
             /// application/mp4
             /// </summary>
-            public const string Mp4 = "application/mp4";
+            public const string Mp4 = Prefix + "mp4";
             
             /// <summary>
             /// application/octet-stream
             /// </summary>
-            public const string OctetStream = "application/octet-stream";
+            public const string OctetStream = Prefix + "octet-stream";
             
             /// <summary>
             /// application/pdf
             /// </summary>
-            public const string Pdf = "application/pdf";
+            public const string Pdf = Prefix + "pdf";
             
             /// <summary>
             /// application/pkcs10
             /// </summary>
-            public const string Pkcs10 = "application/pkcs10";
+            public const string Pkcs10 = Prefix + "pkcs10";
             
             /// <summary>
             /// application/pkcs7-mime
             /// </summary>
-            public const string Pkcs7Mime = "application/pkcs7-mime";
+            public const string Pkcs7Mime = Prefix + "pkcs7-mime";
             
             /// <summary>
             /// application/pkcs7-signature
             /// </summary>
-            public const string Pkcs7Signature = "application/pkcs7-signature";
+            public const string Pkcs7Signature = Prefix + "pkcs7-signature";
             
             /// <summary>
             /// application/pkcs8
             /// </summary>
-            public const string Pkcs8 = "application/pkcs8";
+            public const string Pkcs8 = Prefix + "pkcs8";
             
             /// <summary>
             /// application/postscript
             /// </summary>
-            public const string Postscript = "application/postscript";
+            public const string Postscript = Prefix + "postscript";
             
             /// <summary>
             /// application/rdf+xml
             /// </summary>
-            public const string RdfXml = "application/rdf+xml";
+            public const string RdfXml = Prefix + "rdf+xml";
             
             /// <summary>
             /// application/rss+xml
             /// </summary>
-            public const string RssXml = "application/rss+xml";
+            public const string RssXml = Prefix + "rss+xml";
             
             /// <summary>
             /// application/rtf
             /// </summary>
-            public const string Rtf = "application/rtf";
+            public const string Rtf = Prefix + "rtf";
             
             /// <summary>
             /// application/smil+xml
             /// </summary>
-            public const string SmilXml = "application/smil+xml";
+            public const string SmilXml = Prefix + "smil+xml";
 
             /// <summary>
             /// application/x-font-otf
             /// </summary>
-            public const string XFontOtf = "application/x-font-otf";
+            public const string XFontOtf = Prefix + "x-font-otf";
             
             /// <summary>
             /// application/x-font-ttf
             /// </summary>
-            public const string XFontTtf = "application/x-font-ttf";
+            public const string XFontTtf = Prefix + "x-font-ttf";
             
             /// <summary>
             /// application/x-font-woff
             /// </summary>
-            public const string XFontWoff = "application/x-font-woff";
+            public const string XFontWoff = Prefix + "x-font-woff";
             
             /// <summary>
             /// application/x-pkcs12
             /// </summary>
-            public const string XPkcs12 = "application/x-pkcs12";
+            public const string XPkcs12 = Prefix + "x-pkcs12";
             
             /// <summary>
             /// application/x-shockwave-flash
             /// </summary>
-            public const string XShockwaveFlash = "application/x-shockwave-flash";
+            public const string XShockwaveFlash = Prefix + "x-shockwave-flash";
             
             /// <summary>
             /// application/x-silverlight-app
             /// </summary>
-            public const string XSilverlightApp = "application/x-silverlight-app";
+            public const string XSilverlightApp = Prefix + "x-silverlight-app";
             
             /// <summary>
             /// application/xhtml+xml
             /// </summary>
-            public const string XhtmlXml = "application/xhtml+xml";
+            public const string XhtmlXml = Prefix + "xhtml+xml";
             
             /// <summary>
             /// application/xml
             /// </summary>
-            public const string Xml = "application/xml";
+            public const string Xml = Prefix + "xml";
             
             /// <summary>
             /// application/xml-dtd
             /// </summary>
-            public const string XmlDtd = "application/xml-dtd";
+            public const string XmlDtd = Prefix + "xml-dtd";
             
             /// <summary>
             /// application/xslt+xml
             /// </summary>
-            public const string XsltXml = "application/xslt+xml";
+            public const string XsltXml = Prefix + "xslt+xml";
             
             /// <summary>
             /// application/x-www-form-urlencoded
             /// </summary>
-            public const string XWwwFormUrlencoded = "application/x-www-form-urlencoded";
+            public const string XWwwFormUrlencoded = Prefix + "x-www-form-urlencoded";
             
             /// <summary>
             /// application/zip
             /// </summary>
-            public const string Zip = "application/zip";
+            public const string Zip = Prefix + "zip";
         }
     }
 }

@@ -7,40 +7,42 @@
         /// </summary>
         public static class Text
         {
+            private const string Prefix = "text/";
+            
             /// <summary>
             /// text/css
             /// </summary>
-            public const string Css = "text/css";
+            public const string Css = Prefix + "css";
             
             /// <summary>
             /// text/csv
             /// </summary>
-            public const string Csv = "text/csv";
+            public const string Csv = Prefix + "csv";
             
             /// <summary>
             /// text/html
             /// </summary>
-            public const string Html = "text/html";
+            public const string Html = Prefix + "html";
             
             /// <summary>
             /// text/plain
             /// </summary>
-            public const string Plain = "text/plain";
+            public const string Plain = Prefix + "plain";
             
             /// <summary>
             /// text/richtext
             /// </summary>
-            public const string RichText = "text/richtext";
+            public const string RichText = Prefix + "richtext";
             
             /// <summary>
             /// text/sgml
             /// </summary>
-            public const string Sgml = "text/sgml";
+            public const string Sgml = Prefix + "sgml";
             
             /// <summary>
             /// text/yaml
             /// </summary>
-            public const string Yaml = "text/yaml";
+            public const string Yaml = Prefix + "yaml";
         }
     }
 }

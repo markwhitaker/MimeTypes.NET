@@ -7,40 +7,42 @@
         /// </summary>
         public static class Video
         {
+            private const string Prefix = "video/";
+            
             /// <summary>
             /// video/3gpp
             /// </summary>
-            public const string Threegpp = "video/3gpp";
+            public const string Threegpp = Prefix + "3gpp";
             
             /// <summary>
             /// video/h264
             /// </summary>
-            public const string H264 = "video/h264";
+            public const string H264 = Prefix + "h264";
             
             /// <summary>
             /// video/mp4
             /// </summary>
-            public const string Mp4 = "video/mp4";
+            public const string Mp4 = Prefix + "mp4";
             
             /// <summary>
             /// video/mpeg
             /// </summary>
-            public const string Mpeg = "video/mpeg";
+            public const string Mpeg = Prefix + "mpeg";
             
             /// <summary>
             /// video/ogg
             /// </summary>
-            public const string Ogg = "video/ogg";
+            public const string Ogg = Prefix + "ogg";
             
             /// <summary>
             /// video/quicktime
             /// </summary>
-            public const string Quicktime = "video/quicktime";
+            public const string Quicktime = Prefix + "quicktime";
             
             /// <summary>
             /// video/webm
             /// </summary>
-            public const string Webm = "video/webm";
+            public const string Webm = Prefix + "webm";
         }
     }
 }
