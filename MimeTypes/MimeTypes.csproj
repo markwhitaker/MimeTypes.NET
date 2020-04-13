@@ -10,10 +10,21 @@
         <Description>Tiny library of structured MIME type constants for .NET projects</Description>
         <Copyright>Mark Whitaker</Copyright>
         <PackageProjectUrl>https://github.com/markwhitaker/MimeTypes.NET</PackageProjectUrl>
-        <PackageLicenseUrl>https://github.com/markwhitaker/MimeTypes.NET/blob/master/LICENSE</PackageLicenseUrl>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
         <RepositoryUrl>https://github.com/markwhitaker/MimeTypes.NET</RepositoryUrl>
         <RepositoryType>Git</RepositoryType>
-        <PackageIconUrl>https://raw.githubusercontent.com/markwhitaker/MimeTypes.NET/master/Artwork/MimeTypes-icon-64.png</PackageIconUrl>
+        <PackageIconUrl>https://raw.githubusercontent.com/markwhitaker/MimeTypes.NET/master/Artwork/MimeTypes-icon-128.png</PackageIconUrl>
+        <PackageIcon>MimeTypes-icon-128.png</PackageIcon>
     </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="icon\MimeTypes-icon-128.png" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="..\LICENSE" Pack="true" PackagePath="\">
+        <Link>LICENSE</Link>
+      </None>
+    </ItemGroup>
 
 </Project>
