@@ -58,4 +58,4 @@ jobs:
         run: dotnet pack -c Release -o nugetPackage -p:PackageVersion=${{ steps.gitversion.outputs.legacySemVer }}
 
       - name: Publish to NuGet
-        run: dotnet nuget push nugetPackage/*.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
+        run: dotnet nuget push MimeTypes/nugetPackage/*.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
