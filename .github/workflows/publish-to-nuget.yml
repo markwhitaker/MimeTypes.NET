@@ -43,13 +43,13 @@ jobs:
           dotnet-version: 2.2.108
 
       - name: Install GitVersion
-        uses: gittools/actions/gitversion/setup@v0.6.2
+        uses: gittools/actions/gitversion/setup@v0.9.4
         with:
           versionSpec: '5.1.x'
 
       - name: Run GitVersion
         id: gitversion # step id used as reference for output values
-        uses: gittools/actions/gitversion/execute@v0.6.2
+        uses: gittools/actions/gitversion/execute@v0.9.4
 
       - name: Build project
         run: dotnet build -c Release /p:Version=${{ steps.gitversion.outputs.legacySemVer }} /p:AssemblyVersion=${{ steps.gitversion.outputs.assemblySemVer }}
