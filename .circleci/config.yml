@@ -1,0 +1,59 @@
+aliases:
+  - &setup-environment
+    docker:
+      - image: mcr.microsoft.com/dotnet/sdk:3.1.404-bionic
+
+version: 2
+
+jobs:
+  build:
+    <<: *setup-environment
+    steps:
+      - checkout
+      - run:
+          name: Build library
+          command:
+            dotnet build -c Release
+      - run:
+          name: Run tests
+          command:
+            dotnet test -c Release
+
+  deploy-nuget-package:
+    <<: *setup-environment
+    steps:
+      - checkout
+      - run:
+          name: Build library (with version)
+          command: |
+            ASSEMBLY_VERSION=$(echo $CIRCLE_TAG | sed -e 's/-.*//')
+            echo CIRCLE_TAG=$CIRCLE_TAG
+            echo ASSEMBLY_VERSION=$ASSEMBLY_VERSION
+            dotnet build -c Release /p:Version=$CIRCLE_TAG /p:AssemblyVersion=$ASSEMBLY_VERSION
+      - run:
+          name: Build NuGet package
+          command:
+            dotnet pack -c Release -o nugetPackage -p:PackageVersion=$CIRCLE_TAG
+      - deploy:
+          name: Publish NuGet package
+          command:
+            dotnet nuget push nugetPackage/*.nupkg -k $NUGET_API_KEY -s https://api.nuget.org/v3/index.json
+
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build:
+          filters:
+            tags:
+              only: /.*/
+      - deploy-nuget-package:
+          requires:
+            - build
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              # Only tags beginning x.y.z
+              only: /^\d+\.\d+\.\d+.*$/
