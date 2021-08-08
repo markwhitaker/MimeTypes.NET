@@ -3,7 +3,7 @@
     public static partial class MimeType
     {
         /// <summary>
-        /// MIME type constants for text types
+        /// MIME type constants for <c>text/*</c> types
         /// </summary>
         public static class Text
         {
