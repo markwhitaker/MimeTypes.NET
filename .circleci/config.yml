@@ -49,6 +49,7 @@ workflows:
             tags:
               only: /.*/
       - deploy-nuget-package:
+          # Add to PublishToNuGet context to access the NUGET_API_KEY environment variable
           context: PublishToNuGet
           requires:
             - build
