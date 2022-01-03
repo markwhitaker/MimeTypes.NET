@@ -49,6 +49,7 @@ workflows:
             tags:
               only: /.*/
       - deploy-nuget-package:
+          context: PublishToNuGet
           requires:
             - build
           filters:
