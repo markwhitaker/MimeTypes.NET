@@ -4,6 +4,18 @@
 
 A structured collection of MIME type constants to use in your .NET projects.
 
+Replace this sort of thing...
+
+```
+httpContext.Response.ContentType = "application/json";
+```
+
+with this...
+
+```
+httpContext.Response.ContentType = MimeTypes.Application.Json;
+```
+
 Pull requests welcome!
 
 ---
