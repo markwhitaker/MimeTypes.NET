@@ -8,3 +8,5 @@ Pull requests welcome!
 
 ---
 ![icon](https://raw.githubusercontent.com/markwhitaker/MimeTypes.Java/master/artwork/MimeTypes-icon-32.png) **Java developer?** Check out the Java version of this library, [MimeTypes.Java](https://github.com/markwhitaker/MimeTypes.Java).
+
+![icon](https://raw.githubusercontent.com/markwhitaker/MimeTypes.kt/master/artwork/MimeTypes-icon-32.png) **Kotlin developer?** Check out the Kotlin version of this library, [MimeTypes.kt](https://github.com/markwhitaker/MimeTypes.kt).
