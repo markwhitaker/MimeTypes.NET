@@ -20,7 +20,7 @@ Pull requests welcome!
 
 ## Also for .NET developers
 
-![icon](https://raw.githubusercontent.com/markwhitaker/RegexToolbox.NET/main/Artwork/RegexToolbox-icon-32.png) [RegexToolbox.NET](https://github.com/markwhitaker/MimeTypes.NET): Regular expression tools for .NET developers
+![icon](https://raw.githubusercontent.com/markwhitaker/RegexToolbox.NET/main/Artwork/RegexToolbox-icon-32.png) [RegexToolbox.NET](https://github.com/markwhitaker/RegexToolbox.NET): Regular expression tools for .NET developers
 
 ## MimeTypes for other languages
 
