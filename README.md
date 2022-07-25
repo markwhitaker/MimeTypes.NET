@@ -18,7 +18,12 @@ httpContext.Response.ContentType = MimeTypes.Application.Json;
 
 Pull requests welcome!
 
----
-![icon](https://raw.githubusercontent.com/markwhitaker/MimeTypes.Java/master/artwork/MimeTypes-icon-32.png) **Java developer?** Check out the Java version of this library, [MimeTypes.Java](https://github.com/markwhitaker/MimeTypes.Java).
+## Also for .NET developers
 
-![icon](https://raw.githubusercontent.com/markwhitaker/MimeTypes.kt/master/artwork/MimeTypes-icon-32.png) **Kotlin developer?** Check out the Kotlin version of this library, [MimeTypes.kt](https://github.com/markwhitaker/MimeTypes.kt).
+![icon](https://raw.githubusercontent.com/markwhitaker/RegexToolbox.NET/main/Artwork/RegexToolbox-icon-32.png) [RegexToolbox.NET](https://github.com/markwhitaker/MimeTypes.NET): Regular expression tools for .NET developers
+
+## MimeTypes for other languages
+
+![icon](https://raw.githubusercontent.com/markwhitaker/MimeTypes.Java/master/artwork/MimeTypes-icon-32.png) [MimeTypes for Java](https://github.com/markwhitaker/MimeTypes.Java)
+
+![icon](https://raw.githubusercontent.com/markwhitaker/MimeTypes.kt/master/artwork/MimeTypes-icon-32.png) [MimeTypes for Kotlin](https://github.com/markwhitaker/MimeTypes.kt)
