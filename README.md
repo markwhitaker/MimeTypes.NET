@@ -28,4 +28,4 @@ Pull requests welcome!
 
 ![icon](https://raw.githubusercontent.com/markwhitaker/MimeTypes.kt/master/artwork/MimeTypes-icon-32.png) [MimeTypes for Kotlin](https://github.com/markwhitaker/MimeTypes.kt)
 
-![icon](https://raw.githubusercontent.com/markwhitaker/MimeTypes.JS/master/artwork/MimeTypes-icon-32.png) [MimeTypes for JavaScript](https://github.com/markwhitaker/MimeTypes.JS)
+![icon](https://raw.githubusercontent.com/markwhitaker/MimeTypes.js/master/artwork/MimeTypes-icon-32.png) [MimeTypes for JavaScript](https://github.com/markwhitaker/MimeTypes.js)
