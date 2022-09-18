@@ -8,7 +8,7 @@ env:
 
 jobs:
   publish-to-nuget:
-    name: Publish to NuGet.org
+    name: Build, test and publish to NuGet.org
     runs-on: ubuntu-22.04
     steps:
       - run: echo "ASSEMBLY_VERSION=$(echo $VERSION | sed -e 's/-.*//')" >> $GITHUB_ENV
