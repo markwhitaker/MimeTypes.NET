@@ -9,7 +9,6 @@ ProjectSection(SolutionItems) = preProject
 	.gitignore = .gitignore
 	LICENSE = LICENSE
 	README.md = README.md
-	.circleci\config.yml = .circleci\config.yml
 EndProjectSection
 EndProject
 Global
