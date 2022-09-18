@@ -5,7 +5,7 @@ on:
 
 env:
   VERSION: ${{github.ref_name}}
-  ASSEMBLY_VERSION: ${{github.ref}} | sed -e 's/-.*//'
+  ASSEMBLY_VERSION: `echo ${{github.ref_name}} | sed -e 's/-.*//'`
 
 jobs:
   publish-to-nuget:
