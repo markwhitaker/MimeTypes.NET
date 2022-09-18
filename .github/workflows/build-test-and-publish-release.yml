@@ -3,21 +3,16 @@ on:
   release:
     types: [published]
 
-jobs:
-  build-and-test-main:
-    name: Build and test main
-    uses: markwhitaker/shared-workflows/.github/workflows/dotnet-build-and-test.yml@main
+env:
+  ASSEMBLY_VERSION: echo ${{github.ref}} | sed -e 's/-.*//'
 
+jobs:
   publish-to-nuget:
     name: Publish to NuGet.org
-    needs: build-and-test-main
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v2
-      - uses: brandedoutcast/publish-nuget@v2
-        with:
-          PROJECT_FILE_PATH: MimeTypes/MimeTypes.csproj
-          PACKAGE_NAME: Mainwave.MimeTypes
-          TAG_COMMIT: false
-          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
-          VERSION_STATIC: ${{github.ref}}
+      - run: dotnet build -c Release /p:Version=${{github.ref}} /p:AssemblyVersion=${{env.ASSEMBLY_VERSION}}
+      - run: dotnet test -c Release
+      - run: dotnet pack -c Release -o nugetPackage -p:PackageVersion=${{github.ref}}
+      - run: dotnet nuget push nugetPackage/*.nupkg -k ${{secrets.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json
