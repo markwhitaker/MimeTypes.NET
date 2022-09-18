@@ -12,10 +12,8 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - run: echo "ASSEMBLY_VERSION=$(echo $VERSION | sed -e 's/-.*//')" >> $GITHUB_ENV
-      - run: echo VERSION=$VERSION
-      - run: echo ASSEMBLY_VERSION=$ASSEMBLY_VERSION
-#      - uses: actions/checkout@v2
-#      - run: dotnet build -c Release /p:Version=${{github.ref}} /p:AssemblyVersion=${{env.ASSEMBLY_VERSION}}
-#      - run: dotnet test -c Release
-#      - run: dotnet pack -c Release -o nugetPackage -p:PackageVersion=${{github.ref}}
-#      - run: dotnet nuget push nugetPackage/*.nupkg -k ${{secrets.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json
+      - uses: actions/checkout@v2
+      - run: dotnet build -c Release /p:Version=$VERSION /p:AssemblyVersion=$ASSEMBLY_VERSION
+      - run: dotnet test -c Release
+      - run: dotnet pack -c Release -o nugetPackage -p:PackageVersion=$VERSION
+      - run: dotnet nuget push nugetPackage/*.nupkg -k ${{secrets.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json
