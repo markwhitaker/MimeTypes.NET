@@ -1,0 +1,23 @@
+name: Build, test and publish release
+on:
+  release:
+    types: [published]
+
+jobs:
+  build-and-test-main:
+    name: Build and test main
+    uses: markwhitaker/shared-workflows/.github/workflows/dotnet-build-and-test.yml@main
+
+  publish-to-nuget:
+    name: Publish to NuGet.org
+    needs: build-and-test-main
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: brandedoutcast/publish-nuget@v2
+        with:
+          PROJECT_FILE_PATH: MimeTypes/MimeTypes.csproj
+          PACKAGE_NAME: Mainwave.MimeTypes
+          TAG_COMMIT: false
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+          VERSION_STATIC: ${{github.ref}}
