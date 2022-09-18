@@ -4,15 +4,18 @@ on:
     types: [published]
 
 env:
-  ASSEMBLY_VERSION: echo ${{github.ref}} | sed -e 's/-.*//'
+  VERSION: ${{github.ref_name}}
+  ASSEMBLY_VERSION: ${{github.ref}} | sed -e 's/-.*//'
 
 jobs:
   publish-to-nuget:
     name: Publish to NuGet.org
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v2
-      - run: dotnet build -c Release /p:Version=${{github.ref}} /p:AssemblyVersion=${{env.ASSEMBLY_VERSION}}
-      - run: dotnet test -c Release
-      - run: dotnet pack -c Release -o nugetPackage -p:PackageVersion=${{github.ref}}
-      - run: dotnet nuget push nugetPackage/*.nupkg -k ${{secrets.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json
+      - run: echo VERSION=${{env.VERSION}}
+      - run: echo ASSEMBLY_VERSION=${{env.ASSEMBLY_VERSION}}
+#      - uses: actions/checkout@v2
+#      - run: dotnet build -c Release /p:Version=${{github.ref}} /p:AssemblyVersion=${{env.ASSEMBLY_VERSION}}
+#      - run: dotnet test -c Release
+#      - run: dotnet pack -c Release -o nugetPackage -p:PackageVersion=${{github.ref}}
+#      - run: dotnet nuget push nugetPackage/*.nupkg -k ${{secrets.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json
