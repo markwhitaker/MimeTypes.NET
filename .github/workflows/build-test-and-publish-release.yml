@@ -5,13 +5,13 @@ on:
 
 env:
   VERSION: ${{github.ref_name}}
-  ASSEMBLY_VERSION: echo ${{github.ref_name}} | sed -e 's/-.*//'
 
 jobs:
   publish-to-nuget:
     name: Publish to NuGet.org
     runs-on: ubuntu-22.04
     steps:
+      - run: echo "ASSEMBLY_VERSION=$(echo $VERSION | sed -e 's/-.*//')" >> $GITHUB_ENV
       - run: echo VERSION=$VERSION
       - run: echo ASSEMBLY_VERSION=$ASSEMBLY_VERSION
 #      - uses: actions/checkout@v2
