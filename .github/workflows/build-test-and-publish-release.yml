@@ -5,15 +5,15 @@ on:
 
 env:
   VERSION: ${{github.ref_name}}
-  ASSEMBLY_VERSION: `echo ${{github.ref_name}} | sed -e 's/-.*//'`
+  ASSEMBLY_VERSION: echo ${{github.ref_name}} | sed -e 's/-.*//'
 
 jobs:
   publish-to-nuget:
     name: Publish to NuGet.org
     runs-on: ubuntu-22.04
     steps:
-      - run: echo VERSION=${{env.VERSION}}
-      - run: echo ASSEMBLY_VERSION=${{env.ASSEMBLY_VERSION}}
+      - run: echo VERSION=$VERSION
+      - run: echo ASSEMBLY_VERSION=$ASSEMBLY_VERSION
 #      - uses: actions/checkout@v2
 #      - run: dotnet build -c Release /p:Version=${{github.ref}} /p:AssemblyVersion=${{env.ASSEMBLY_VERSION}}
 #      - run: dotnet test -c Release
