@@ -1,10 +1,5 @@
-name: Build and test branch
-on:
-  push:
-    branches-ignore:
-      - main
-  pull_request:
-    types: [opened, reopened, synchronize]
+name: Build and test
+on: [push, pull_request]
 
 jobs:
   build-and-test-branch:
