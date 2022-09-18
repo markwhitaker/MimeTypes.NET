@@ -2,6 +2,6 @@ name: Build and test
 on: [push, pull_request]
 
 jobs:
-  build-and-test-branch:
-    name: Build and test branch
+  build-and-test:
+    name: Build and test
     uses: markwhitaker/shared-workflows/.github/workflows/dotnet-build-and-test.yml@main
