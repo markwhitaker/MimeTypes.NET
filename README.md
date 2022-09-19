@@ -1,6 +1,6 @@
 ﻿![icon](Artwork/MimeTypes-icon-100.png)
 
-# MimeTypes.NET [![Build and test](https://github.com/markwhitaker/MimeTypes.NET/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/markwhitaker/MimeTypes.NET/actions/workflows/build-and-test.yml) [![NuGet Version and Downloads count](https://buildstats.info/nuget/Mainwave.MimeTypes)](https://www.nuget.org/packages/Mainwave.MimeTypes/)
+# MimeTypes.NET [![Build and test](https://github.com/markwhitaker/MimeTypes.NET/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/markwhitaker/MimeTypes.NET/actions/workflows/build-and-test.yml) [![Publish to NuGet](https://github.com/markwhitaker/MimeTypes.NET/actions/workflows/publish-to-nuget.yml/badge.svg)](https://github.com/markwhitaker/MimeTypes.NET/actions/workflows/publish-to-nuget.yml) [![NuGet Version and Downloads count](https://buildstats.info/nuget/Mainwave.MimeTypes)](https://www.nuget.org/packages/Mainwave.MimeTypes/)
 
 A structured collection of MIME type constants to use in your .NET projects.
 
