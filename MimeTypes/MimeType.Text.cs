@@ -10,6 +10,11 @@
             private const string Prefix = "text/";
 
             /// <summary>
+            /// text/calendar
+            /// </summary>
+            public const string Calendar = Prefix + "calendar";
+
+            /// <summary>
             /// text/css
             /// </summary>
             public const string Css = Prefix + "css";

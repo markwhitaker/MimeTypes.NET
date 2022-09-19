@@ -10,6 +10,11 @@
             private const string Prefix = "image/";
 
             /// <summary>
+            /// image/avif
+            /// </summary>
+            public const string Avif = Prefix + "avif";
+
+            /// <summary>
             /// image/bmp
             /// </summary>
             public const string Bmp = Prefix + "bmp";
@@ -38,6 +43,11 @@
             /// image/tiff
             /// </summary>
             public const string Tiff = Prefix + "tiff";
+
+            /// <summary>
+            /// image/tiff
+            /// </summary>
+            public const string VndMicrosoftIcon = Prefix + "vnd.microsoft.icon";
 
             /// <summary>
             /// image/webp
