@@ -45,7 +45,7 @@
             public const string Tiff = Prefix + "tiff";
 
             /// <summary>
-            /// image/tiff
+            /// image/vnd.microsoft.icon
             /// </summary>
             public const string VndMicrosoftIcon = Prefix + "vnd.microsoft.icon";
 
