@@ -10,14 +10,15 @@
             private const string Prefix = "video/";
 
             /// <summary>
-            /// video/3gpp
-            /// </summary>
-            public const string Threegpp = Prefix + "3gpp";
-
-            /// <summary>
             /// video/h264
             /// </summary>
             public const string H264 = Prefix + "h264";
+
+
+            /// <summary>
+            /// video/mp2t
+            /// </summary>
+            public const string Mp2t = Prefix + "mp2t";
 
             /// <summary>
             /// video/mp4
@@ -40,9 +41,24 @@
             public const string Quicktime = Prefix + "quicktime";
 
             /// <summary>
+            /// video/3gpp
+            /// </summary>
+            public const string Threegpp = Prefix + "3gpp";
+
+            /// <summary>
+            /// video/3gpp2
+            /// </summary>
+            public const string Threegpp2 = Prefix + "3gpp2";
+
+            /// <summary>
             /// video/webm
             /// </summary>
             public const string Webm = Prefix + "webm";
+
+            /// <summary>
+            /// video/x-msvideo
+            /// </summary>
+            public const string XMsvideo = Prefix + "x-msvideo";
         }
     }
 }

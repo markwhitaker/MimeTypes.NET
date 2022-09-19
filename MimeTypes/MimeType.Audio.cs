@@ -30,6 +30,21 @@
             public const string Ogg = Prefix + "ogg";
 
             /// <summary>
+            /// audio/opus
+            /// </summary>
+            public const string Opus = Prefix + "opus";
+
+            /// <summary>
+            /// audio/3gpp
+            /// </summary>
+            public const string Threegpp = Prefix + "3gpp";
+
+            /// <summary>
+            /// audio/3gpp2
+            /// </summary>
+            public const string Threegpp2 = Prefix + "3gpp2";
+
+            /// <summary>
             /// audio/wav
             /// </summary>
             public const string Wav = Prefix + "wav";
@@ -48,6 +63,11 @@
             /// audio/x-aiff
             /// </summary>
             public const string XAiff = Prefix + "x-aiff";
+
+            /// <summary>
+            /// audio/x-midi
+            /// </summary>
+            public const string XMidi = Prefix + "x-midi";
 
             /// <summary>
             /// audio/x-mpegurl

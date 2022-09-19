@@ -5,6 +5,7 @@ namespace Mainwave.MimeTypes.Tests;
 [TestFixture]
 public class TextTests
 {
+    [TestCase(MimeType.Text.Calendar, "text/calendar")]
     [TestCase(MimeType.Text.Css, "text/css")]
     [TestCase(MimeType.Text.Csv, "text/csv")]
     [TestCase(MimeType.Text.Html, "text/html")]
