@@ -25,9 +25,24 @@
             public const string Gif = Prefix + "gif";
 
             /// <summary>
+            /// image/heic
+            /// </summary>
+            public const string Heic = Prefix + "heic";
+
+            /// <summary>
+            /// image/heif
+            /// </summary>
+            public const string Heif = Prefix + "heif";
+
+            /// <summary>
             /// image/jpeg
             /// </summary>
             public const string Jpeg = Prefix + "jpeg";
+
+            /// <summary>
+            /// image/jxl
+            /// </summary>
+            public const string JpegXl = Prefix + "jxl";
 
             /// <summary>
             /// image/png
@@ -53,6 +68,7 @@
             /// image/webp
             /// </summary>
             public const string Webp = Prefix + "webp";
+                        
         }
     }
 }

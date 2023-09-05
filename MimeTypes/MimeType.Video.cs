@@ -10,9 +10,19 @@
             private const string Prefix = "video/";
 
             /// <summary>
+            /// video/av1
+            /// </summary>
+            public const string Av1 = Prefix + "av1";
+
+            /// <summary>
             /// video/h264
             /// </summary>
             public const string H264 = Prefix + "h264";
+
+            /// <summary>
+            /// video/h265
+            /// </summary>
+            public const string H265 = Prefix + "h265";
 
 
             /// <summary>
@@ -56,9 +66,16 @@
             public const string Webm = Prefix + "webm";
 
             /// <summary>
+            /// video/x-matroska
+            /// </summary>
+            public const string XMatroska = Prefix + "x-matroska";
+
+            /// <summary>
             /// video/x-msvideo
             /// </summary>
             public const string XMsvideo = Prefix + "x-msvideo";
+
+            
         }
     }
 }
