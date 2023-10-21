@@ -9,6 +9,9 @@ ProjectSection(SolutionItems) = preProject
 	.gitignore = .gitignore
 	LICENSE = LICENSE
 	README.md = README.md
+	.github\workflows\publish-to-nuget.yml = .github\workflows\publish-to-nuget.yml
+	.github\workflows\build-and-test.yml = .github\workflows\build-and-test.yml
+	.github\dependabot.yml = .github\dependabot.yml
 EndProjectSection
 EndProject
 Global

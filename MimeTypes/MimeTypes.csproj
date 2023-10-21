@@ -15,10 +15,12 @@
         <RepositoryType>Git</RepositoryType>
         <PackageIconUrl>https://raw.githubusercontent.com/markwhitaker/MimeTypes.NET/master/Artwork/MimeTypes-icon-128.png</PackageIconUrl>
         <PackageIcon>MimeTypes-icon-128.png</PackageIcon>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
     <ItemGroup>
         <None Include="icon\MimeTypes-icon-128.png" Pack="true" PackagePath="\" />
+        <None Include="..\README.md" Pack="true" PackagePath="\" />
     </ItemGroup>
 
     <ItemGroup>
