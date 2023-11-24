@@ -1,5 +1,8 @@
 ﻿namespace Mainwave.MimeTypes
 {
+    /// <summary>
+    /// A structured collection of MIME type constants.
+    /// </summary>
     public static partial class MimeType
     {
         /// <summary>
