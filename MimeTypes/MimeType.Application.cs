@@ -51,6 +51,11 @@
             /// application/json
             /// </summary>
             public const string Json = Prefix + "json";
+            
+            /// <summary>
+            /// application/jsonp
+            /// </summary>
+            public const string JsonP = Prefix + "jsonp";
 
             /// <summary>
             /// application/ld+json
