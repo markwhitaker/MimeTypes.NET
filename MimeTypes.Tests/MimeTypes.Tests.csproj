@@ -7,7 +7,7 @@
 
         <RootNamespace>Mainwave.MimeTypes.Tests</RootNamespace>
 
-        <LangVersion>10</LangVersion>
+        <LangVersion>default</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>

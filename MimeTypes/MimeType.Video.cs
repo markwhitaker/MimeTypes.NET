@@ -1,64 +1,63 @@
-﻿namespace Mainwave.MimeTypes
+﻿namespace Mainwave.MimeTypes;
+
+public static partial class MimeType
 {
-    public static partial class MimeType
+    /// <summary>
+    /// MIME type constants for <c>video/*</c> types
+    /// </summary>
+    public static class Video
     {
+        private const string Prefix = "video/";
+
         /// <summary>
-        /// MIME type constants for <c>video/*</c> types
+        /// video/h264
         /// </summary>
-        public static class Video
-        {
-            private const string Prefix = "video/";
-
-            /// <summary>
-            /// video/h264
-            /// </summary>
-            public const string H264 = Prefix + "h264";
+        public const string H264 = Prefix + "h264";
 
 
-            /// <summary>
-            /// video/mp2t
-            /// </summary>
-            public const string Mp2t = Prefix + "mp2t";
+        /// <summary>
+        /// video/mp2t
+        /// </summary>
+        public const string Mp2t = Prefix + "mp2t";
 
-            /// <summary>
-            /// video/mp4
-            /// </summary>
-            public const string Mp4 = Prefix + "mp4";
+        /// <summary>
+        /// video/mp4
+        /// </summary>
+        public const string Mp4 = Prefix + "mp4";
 
-            /// <summary>
-            /// video/mpeg
-            /// </summary>
-            public const string Mpeg = Prefix + "mpeg";
+        /// <summary>
+        /// video/mpeg
+        /// </summary>
+        public const string Mpeg = Prefix + "mpeg";
 
-            /// <summary>
-            /// video/ogg
-            /// </summary>
-            public const string Ogg = Prefix + "ogg";
+        /// <summary>
+        /// video/ogg
+        /// </summary>
+        public const string Ogg = Prefix + "ogg";
 
-            /// <summary>
-            /// video/quicktime
-            /// </summary>
-            public const string Quicktime = Prefix + "quicktime";
+        /// <summary>
+        /// video/quicktime
+        /// </summary>
+        public const string Quicktime = Prefix + "quicktime";
 
-            /// <summary>
-            /// video/3gpp
-            /// </summary>
-            public const string Threegpp = Prefix + "3gpp";
+        /// <summary>
+        /// video/3gpp
+        /// </summary>
+        public const string Threegpp = Prefix + "3gpp";
 
-            /// <summary>
-            /// video/3gpp2
-            /// </summary>
-            public const string Threegpp2 = Prefix + "3gpp2";
+        /// <summary>
+        /// video/3gpp2
+        /// </summary>
+        public const string Threegpp2 = Prefix + "3gpp2";
 
-            /// <summary>
-            /// video/webm
-            /// </summary>
-            public const string Webm = Prefix + "webm";
+        /// <summary>
+        /// video/webm
+        /// </summary>
+        public const string Webm = Prefix + "webm";
 
-            /// <summary>
-            /// video/x-msvideo
-            /// </summary>
-            public const string XMsvideo = Prefix + "x-msvideo";
-        }
+        /// <summary>
+        /// video/x-msvideo
+        /// </summary>
+        public const string XMsvideo = Prefix + "x-msvideo";
     }
 }

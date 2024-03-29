@@ -1,33 +1,32 @@
-﻿namespace Mainwave.MimeTypes
+﻿namespace Mainwave.MimeTypes;
+
+public static partial class MimeType
 {
-    public static partial class MimeType
+    /// <summary>
+    /// MIME type constants for <c>multipart/*</c> types
+    /// </summary>
+    public static class Multipart
     {
+        private const string Prefix = "multipart/";
+
         /// <summary>
-        /// MIME type constants for <c>multipart/*</c> types
+        /// multipart/byteranges
         /// </summary>
-        public static class Multipart
-        {
-            private const string Prefix = "multipart/";
+        public const string Byteranges = Prefix + "byteranges";
 
-            /// <summary>
-            /// multipart/byteranges
-            /// </summary>
-            public const string Byteranges = Prefix + "byteranges";
+        /// <summary>
+        /// multipart/encrypted
+        /// </summary>
+        public const string Encrypted = Prefix + "encrypted";
 
-            /// <summary>
-            /// multipart/encrypted
-            /// </summary>
-            public const string Encrypted = Prefix + "encrypted";
+        /// <summary>
+        /// multipart/form-data
+        /// </summary>
+        public const string FormData = Prefix + "form-data";
 
-            /// <summary>
-            /// multipart/form-data
-            /// </summary>
-            public const string FormData = Prefix + "form-data";
-
-            /// <summary>
-            /// multipart/related
-            /// </summary>
-            public const string Related = Prefix + "related";
-        }
+        /// <summary>
+        /// multipart/related
+        /// </summary>
+        public const string Related = Prefix + "related";
     }
 }

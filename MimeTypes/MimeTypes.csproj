@@ -16,6 +16,7 @@
         <PackageIconUrl>https://raw.githubusercontent.com/markwhitaker/MimeTypes.NET/master/Artwork/MimeTypes-icon-128.png</PackageIconUrl>
         <PackageIcon>MimeTypes-icon-128.png</PackageIcon>
         <PackageReadmeFile>README.md</PackageReadmeFile>
+        <LangVersion>default</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
