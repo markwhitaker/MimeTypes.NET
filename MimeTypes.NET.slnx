@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".github/dependabot.yml" />
+    <File Path=".github/workflows/build-and-test.yml" />
+    <File Path=".github/workflows/publish-to-nuget.yml" />
+    <File Path=".gitignore" />
+    <File Path="LICENSE" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="MimeTypes.Tests/MimeTypes.Tests.csproj" />
+  <Project Path="MimeTypes/MimeTypes.csproj" />
+</Solution>
