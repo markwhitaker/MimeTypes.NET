@@ -14,6 +14,10 @@ public static partial class MimeType
         /// </summary>
         public const string H264 = Prefix + "h264";
 
+        /// <summary>
+        /// video/mj2
+        /// </summary>
+        public const string Jpeg2000 = Prefix + "mj2";
 
         /// <summary>
         /// video/mp2t
