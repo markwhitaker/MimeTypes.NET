@@ -14,6 +14,7 @@ public class ApplicationTests
     [TestCase(MimeType.Application.Javascript, "application/javascript")]
     [TestCase(MimeType.Application.Json, "application/json")]
     [TestCase(MimeType.Application.LdJson, "application/ld+json")]
+    [TestCase(MimeType.Application.ManifestJson, "application/manifest+json")]
     [TestCase(MimeType.Application.Mp4, "application/mp4")]
     [TestCase(MimeType.Application.Msword, "application/msword")]
     [TestCase(MimeType.Application.OctetStream, "application/octet-stream")]

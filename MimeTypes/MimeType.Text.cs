@@ -35,6 +35,11 @@ public static partial class MimeType
         public const string Javascript = Prefix + "javascript";
 
         /// <summary>
+        /// text/markdown
+        /// </summary>
+        public const string Markdown = Prefix + "markdown";
+
+        /// <summary>
         /// text/plain
         /// </summary>
         public const string Plain = Prefix + "plain";

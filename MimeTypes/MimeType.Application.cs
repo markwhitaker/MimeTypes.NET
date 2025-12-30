@@ -55,6 +55,11 @@ public static partial class MimeType
         public const string LdJson = Prefix + "ld+json";
 
         /// <summary>
+        /// application/manifest+json
+        /// </summary>
+        public const string ManifestJson = Prefix + "manifest+json";
+
+        /// <summary>
         /// application/mp4
         /// </summary>
         public const string Mp4 = Prefix + "mp4";
