@@ -10,6 +10,7 @@ public class TextTests
     [TestCase(MimeType.Text.Csv, "text/csv")]
     [TestCase(MimeType.Text.Html, "text/html")]
     [TestCase(MimeType.Text.Javascript, "text/javascript")]
+    [TestCase(MimeType.Text.Markdown, "text/markdown")]
     [TestCase(MimeType.Text.Plain, "text/plain")]
     [TestCase(MimeType.Text.RichText, "text/richtext")]
     [TestCase(MimeType.Text.Sgml, "text/sgml")]
