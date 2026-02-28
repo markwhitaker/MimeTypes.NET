@@ -30,6 +30,21 @@ public static partial class MimeType
         public const string Jpeg = Prefix + "jpeg";
 
         /// <summary>
+        /// image/jp2
+        /// </summary>
+        public const string Jpeg2000 = Prefix + "jp2";
+
+        /// <summary>
+        /// image/jpm
+        /// </summary>
+        public const string Jpeg2000Compound = Prefix + "jpm";
+
+        /// <summary>
+        /// image/jpx
+        /// </summary>
+        public const string Jpeg2000Extended = Prefix + "jpx";
+
+        /// <summary>
         /// image/png
         /// </summary>
         public const string Png = Prefix + "png";

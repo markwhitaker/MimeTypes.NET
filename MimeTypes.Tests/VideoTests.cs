@@ -6,6 +6,7 @@ namespace Mainwave.MimeTypes.Tests;
 public class VideoTests
 {
     [TestCase(MimeType.Video.H264, "video/h264")]
+    [TestCase(MimeType.Video.Jpeg2000, "video/mj2")]
     [TestCase(MimeType.Video.Mp2t, "video/mp2t")]
     [TestCase(MimeType.Video.Mp4, "video/mp4")]
     [TestCase(MimeType.Video.Mpeg, "video/mpeg")]
