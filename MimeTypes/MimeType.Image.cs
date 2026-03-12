@@ -25,24 +25,24 @@ public static partial class MimeType
         public const string Gif = Prefix + "gif";
 
         /// <summary>
+        /// image/jp2
+        /// </summary>
+        public const string Jp2 = Prefix + "jp2";
+
+        /// <summary>
         /// image/jpeg
         /// </summary>
         public const string Jpeg = Prefix + "jpeg";
-
-        /// <summary>
-        /// image/jp2
-        /// </summary>
-        public const string Jpeg2000 = Prefix + "jp2";
-
+        
         /// <summary>
         /// image/jpm
         /// </summary>
-        public const string Jpeg2000Compound = Prefix + "jpm";
+        public const string Jpm = Prefix + "jpm";
 
         /// <summary>
         /// image/jpx
         /// </summary>
-        public const string Jpeg2000Extended = Prefix + "jpx";
+        public const string Jpx = Prefix + "jpx";
 
         /// <summary>
         /// image/png
