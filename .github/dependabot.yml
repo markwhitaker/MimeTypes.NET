@@ -6,3 +6,10 @@ updates:
       interval: weekly
     assignees:
       - markwhitaker
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    assignees:
+      - markwhitaker
