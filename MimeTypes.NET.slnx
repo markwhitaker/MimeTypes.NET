@@ -4,6 +4,7 @@
     <File Path=".github/workflows/build-and-test.yml" />
     <File Path=".github/workflows/publish-to-nuget.yml" />
     <File Path=".gitignore" />
+    <File Path="CONTRIBUTING.md" />
     <File Path="LICENSE" />
     <File Path="README.md" />
   </Folder>
