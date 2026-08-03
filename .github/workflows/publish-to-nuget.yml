@@ -6,5 +6,7 @@ on:
 jobs:
   publish-to-nuget:
     name: Publish release to NuGet
+    permissions:
+      id-token: write
     uses: markwhitaker/shared-workflows/.github/workflows/dotnet-publish-release-to-nuget.yml@main
     secrets: inherit
