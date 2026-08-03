@@ -6,7 +6,7 @@ on:
 jobs:
   build-and-test:
     name: Build, test and pack
-    uses: markwhitaker/shared-workflows/.github/workflows/dotnet-publish-release-to-nuget.yml@main
+    uses: markwhitaker/shared-workflows/.github/workflows/dotnet-build-test-pack.yml@main
 
   publish-to-nuget:
     name: Publish release to NuGet
